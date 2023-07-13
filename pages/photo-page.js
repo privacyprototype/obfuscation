@@ -56,20 +56,100 @@ var json = {
       "caption": "a close up of a purse with a metal clasp"
     }
   ],
-  "private_bboxes": [],
+  "private_bboxes": [
+    {
+      "id": 1,
+      "caption": "the jpmorgan chase black card",
+      "category": "credit card"
+    }
+  ],
   'originalWidth': 987,
   'originalHeight': 818
 }
+
+const editOptionData = {
+  "background":{
+    "blur":['exact', 'bounding box'], 
+    "black out":['exact', 'bounding box']
+  },
+  "foreground": {
+    "blur":['exact', 'bounding box'],
+    "black out":['exact', 'bounding box'],
+    "erase": ['exact']
+  }
+};
+
 export default function FirstPost() {
     const [overlay, setOverlay] = useState(<></>);
-    const [caption, setCaption] = useState('Overall Image Caption: ' + json.caption);
+    const [caption, setCaption] = useState(json.caption);
     const [showOverallCaption, setShowOverallCaption] = useState(true);
+    
+    // ===== image editor code begins ===== //
+    const [privObj, setPrivObj] = useState([]);
+    const [selectedObj, setSelectedObj] = useState('');
+    const [borf, setBorf] = useState('')
+    const [style, setStyle] = useState('');
+    const [shape, setShape] = useState('');
+    const [resultImgPath, setResultImgPath] = useState('./images/6.jpeg') 
+
+    useEffect(() => {
+      setPrivObj(json['private_bboxes']) 
+    }, []);
+
+    const handleObjChange = (event) => {
+      setSelectedObj(event.target.value);
+      setStyle('');
+      if (selectedObj === "background") {
+        setBorf('background')
+      } else {
+        setBorf('foreground')
+      }
+    };
+
+    const handleStyleChange = (event) => {
+      setStyle(event.target.value);
+      setShape('');
+    };
+
+    const handleShapeChange = (event) => {
+      setShape(event.target.value);
+    };
+
+    const handleApplyEdit = (event) => {
+      let ImgPath = '/images/' + 1 + '_' + shape.replace(/ /g,"_") + "_" + style.replace(/ /g,"_") + ".jpeg"
+      setResultImgPath(ImgPath)
+      // !! record result
+    };
+
+    const handleRevert = (event) => {
+      setSelectedObj('')
+      setStyle('')
+      setShape('')
+      setResultImgPath('./images/6.jpeg')
+    };
+
+    // const handleReviewImgError = (event) => {
+    //   setResultImgPath('/images/1.jpeg')
+    // };
+
+    let styles = [];
+    let shapes = [];
+    if (borf === "background") {
+      styles = Object.keys(editOptionData["background"]);
+      shapes = style ? editOptionData["background"][style] : [];
+    } 
+    
+    if (borf === "foreground") {
+      styles = Object.keys(editOptionData["foreground"]);
+      shapes = style ? editOptionData["foreground"][style] : [];
+    }
+ 
+    // ===== image editor code ends ===== //
 
     useEffect(() => {
       let ZingTouch = require('zingtouch');
       let imageRegion = document.body.getElementsByClassName(utilStyles.headingMd)[0];
       let zt = new ZingTouch.Region(imageRegion);
-
       zt.bind(document.querySelector('#image_explore'), 'tap', function () {
         setShowOverallCaption(false);
         zt.unbind(document.querySelector('#image_explore'));
@@ -78,6 +158,7 @@ export default function FirstPost() {
       for (let box of boxDivElements) {
         zt.bind(box, 'tap', function(e) {
           setCaption('Object Caption: ' + box.title);
+          box.ariaLabel = caption
         });
       }
     }, [overlay, showOverallCaption]);
@@ -116,7 +197,7 @@ export default function FirstPost() {
         </div>
 
         <header className={utilStyles.header}>
-        <h1 className={utilStyles.heading2Xl}>Photo 1</h1>
+        <h1 aria-label="Photo 1" className={utilStyles.heading2Xl}>Photo 1</h1>
         </header>
 
         <div className={utilStyles.headingMd}>
@@ -124,43 +205,80 @@ export default function FirstPost() {
           <div className='relativewrapper'>
             <Image
               priority
-              src="./images/1.jpeg"
+              src="./images/6.jpeg"
               width={300}
               height={300}
-              alt=""
+              alt={caption}
               id='image_explore'
+              accessible={false} 
             />
-            {!showOverallCaption && overlay}
+            {/* {caption} */}
           </div>
-          {caption}
+          
+          <Link href="/photo-explorer">Explore what's in the image</Link>
         </div>
-        
+
+        {/* ===== image editor code begins ===== */} 
         <div className={utilStyles.headingMd}>
           <h2 className={utilStyles.sectionHeading}>Edit Image</h2>
-          <p className={utilStyles.bold}>Select things to hide</p>
-          <select name="focus" id="focus">
-             <option value="" selected="selected">Hide entire background</option>
+          Item to hide: <select value={selectedObj} onChange={handleObjChange}>
+            <option value="">Select a potential private item to hide</option>
+            {privObj.map((item) =>(
+              <option key={item.id} value={item.id}>
+                {item.caption}
+              </option>
+            ))}
+            <option value="background">Entire background</option>
           </select>
-          <p className={utilStyles.bold}>Style </p>
-          <select name="style" id="style">
-             <option value="" selected="selected">Blur</option>
+          <br></br>
+          Style: <select value={style} onChange={handleStyleChange}>
+            <option value="">Select the hidding style</option>
+            {styles.map((style) =>(
+              <option key={style} value={style}>
+                {style}
+              </option>
+            ))}
           </select>
-          <p className={utilStyles.bold}> Shape </p>
-          <select name="shape" id="shape">
-             <option value="" selected="selected">exact</option>
+          <br></br>
+          Shape: <select value={shape} onChange={handleShapeChange}>
+            <option value="">Select the shape to hide</option>
+            {shapes.map((shape) =>(
+              <option key={shape} value={shape}>
+               {shape}
+              </option>
+            ))}
           </select>
 
           <br></br>
           <br></br>
-          <button type="button">Apply Edit</button>
-          <button type="button">Review Image</button>
-          <button type="button">Revert</button>
+          <button onClick={handleApplyEdit}>Apply Edit</button>
+          <br></br>
+          <button onClick={handleRevert}>Revert</button>
+        </div>
+
+        <div className={utilStyles.headingMd}>
+          <h2 className={utilStyles.sectionHeading}>Review Edited Image</h2>
+          <div className='relativewrapper'>
+            <Image
+              // onError={handleReviewImgError}
+              priority
+              src={resultImgPath}
+              width={300}
+              height={300}
+              alt={caption}
+              id='image_review'
+              accessible={true} 
+            />
+            {/* {overlay} */}
+          </div>
+          {/* {caption} */}
         </div>
 
         <div>
-        <button type="button">Complete</button>
+        <button type="button">Complete and submit</button>
         </div>
-       
+        {/* ===== image editor code ends ===== */} 
+
       </Layout>
     );
   }

@@ -1,0 +1,1159 @@
+{
+  "original": {
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          345
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a stuffed animal in a box",
+        "bbox": [
+          148,
+          438,
+          231,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a man is sitting on a bench with a phone",
+        "bbox": [
+          0,
+          255,
+          144,
+          449
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a wine glass with a red liquid inside",
+        "bbox": [
+          539,
+          0,
+          261,
+          360
+        ]
+      },
+      {
+        "id": 5,
+        "caption": "a book shelf with dvds on it",
+        "bbox": [
+          299,
+          77,
+          268,
+          371
+        ]
+      },
+      {
+        "id": 6,
+        "caption": "a pink liquid in a glass with a straw",
+        "bbox": [
+          764,
+          0,
+          306,
+          704
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          647,
+          452
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a water bottle with a straw sitting on a table",
+        "bbox": [
+          144,
+          0,
+          927,
+          678
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a piece of paper on a table",
+        "bbox": [
+          0,
+          514,
+          1069,
+          929
+        ]
+      }
+    ]
+  },
+  "present": {
+    "caption": "a pink drink and a paper cup on a table",
+    "OCR": [
+      {
+        "content": "Contigo®",
+        "boundingBox": [
+          763,
+          594,
+          819,
+          643,
+          800,
+          662,
+          744,
+          614
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 8
+          }
+        ]
+      },
+      {
+        "content": "50",
+        "boundingBox": [
+          0,
+          810,
+          20,
+          811,
+          20,
+          823,
+          0,
+          822
+        ],
+        "spans": [
+          {
+            "offset": 9,
+            "length": 2
+          }
+        ]
+      },
+      {
+        "content": "w whore to start. I guess I'll just",
+        "boundingBox": [
+          0,
+          889,
+          173,
+          853,
+          175,
+          864,
+          0,
+          900
+        ],
+        "spans": [
+          {
+            "offset": 12,
+            "length": 35
+          }
+        ]
+      },
+      {
+        "content": "the world, and I always have, Even",
+        "boundingBox": [
+          0,
+          899,
+          182,
+          863,
+          184,
+          875,
+          0,
+          910
+        ],
+        "spans": [
+          {
+            "offset": 48,
+            "length": 34
+          }
+        ]
+      },
+      {
+        "content": "d the rest of my life with you.",
+        "boundingBox": [
+          0,
+          911,
+          156,
+          882,
+          158,
+          892,
+          0,
+          922
+        ],
+        "spans": [
+          {
+            "offset": 83,
+            "length": 31
+          }
+        ]
+      },
+      {
+        "content": "ofident that wo can overcome",
+        "boundingBox": [
+          0,
+          923,
+          161,
+          893,
+          163,
+          904,
+          1,
+          934
+        ],
+        "spans": [
+          {
+            "offset": 115,
+            "length": 28
+          }
+        ]
+      },
+      {
+        "content": "y life without you, and I'm so",
+        "boundingBox": [
+          0,
+          936,
+          164,
+          905,
+          166,
+          916,
+          2,
+          947
+        ],
+        "spans": [
+          {
+            "offset": 144,
+            "length": 30
+          }
+        ]
+      },
+      {
+        "content": "o, my life, my everything. And I",
+        "boundingBox": [
+          0,
+          949,
+          172,
+          916,
+          174,
+          927,
+          2,
+          960
+        ],
+        "spans": [
+          {
+            "offset": 175,
+            "length": 32
+          }
+        ]
+      },
+      {
+        "content": "'Il always be your loyal and loving",
+        "boundingBox": [
+          0,
+          962,
+          186,
+          925,
+          189,
+          936,
+          0,
+          973
+        ],
+        "spans": [
+          {
+            "offset": 208,
+            "length": 35
+          }
+        ]
+      },
+      {
+        "content": "I want us to be happy and to",
+        "boundingBox": [
+          4,
+          986,
+          172,
+          955,
+          174,
+          965,
+          6,
+          997
+        ],
+        "spans": [
+          {
+            "offset": 244,
+            "length": 28
+          }
+        ]
+      },
+      {
+        "content": "ally of our own and to watch our",
+        "boundingBox": [
+          1,
+          1001,
+          189,
+          965,
+          191,
+          975,
+          3,
+          1012
+        ],
+        "spans": [
+          {
+            "offset": 273,
+            "length": 32
+          }
+        ]
+      },
+      {
+        "content": "o always bo thoro for each",
+        "boundingBox": [
+          3,
+          1014,
+          160,
+          985,
+          162,
+          994,
+          4,
+          1025
+        ],
+        "spans": [
+          {
+            "offset": 306,
+            "length": 26
+          }
+        ]
+      },
+      {
+        "content": "or us.",
+        "boundingBox": [
+          0,
+          1029,
+          29,
+          1025,
+          29,
+          1035,
+          0,
+          1040
+        ],
+        "spans": [
+          {
+            "offset": 333,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "content": "ngs are possible. I love you,",
+        "boundingBox": [
+          0,
+          1044,
+          161,
+          1013,
+          163,
+          1023,
+          0,
+          1058
+        ],
+        "spans": [
+          {
+            "offset": 340,
+            "length": 29
+          }
+        ]
+      },
+      {
+        "content": "or us. with all my love,",
+        "boundingBox": [
+          0,
+          1058,
+          134,
+          1033,
+          136,
+          1044,
+          0,
+          1072
+        ],
+        "spans": [
+          {
+            "offset": 370,
+            "length": 24
+          }
+        ]
+      },
+      {
+        "content": "waiter or waitress know so we can",
+        "boundingBox": [
+          3,
+          1217,
+          221,
+          1161,
+          225,
+          1172,
+          6,
+          1230
+        ],
+        "spans": [
+          {
+            "offset": 395,
+            "length": 33
+          }
+        ]
+      },
+      {
+        "content": "MENU",
+        "boundingBox": [
+          7,
+          1339,
+          75,
+          1323,
+          77,
+          1337,
+          9,
+          1354
+        ],
+        "spans": [
+          {
+            "offset": 429,
+            "length": 4
+          }
+        ]
+      }
+    ],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          345
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a stuffed animal in a box",
+        "bbox": [
+          148,
+          438,
+          231,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a man is sitting on a bench with a phone",
+        "bbox": [
+          0,
+          255,
+          144,
+          449
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a wine glass with a red liquid inside",
+        "bbox": [
+          539,
+          0,
+          261,
+          360
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          647,
+          452
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a water bottle with a straw sitting on a table",
+        "bbox": [
+          144,
+          0,
+          927,
+          678
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a piece of paper on a table",
+        "bbox": [
+          0,
+          514,
+          1069,
+          929
+        ]
+      }
+    ],
+    "private_bboxes": [
+      {
+        "id": 9,
+        "caption": "a piece of paper on a table",
+        "categories": [
+          "paper document"
+        ]
+      }
+    ]
+  },
+  "9_foreground_bounding_box_blur": {
+    "caption": "a pink and black vase with a straw sticking out of it",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          345
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a cat is sitting on a bed",
+        "bbox": [
+          148,
+          438,
+          231,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a person sitting on a chair in a room",
+        "bbox": [
+          0,
+          255,
+          144,
+          449
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a wine glass with a red liquid inside",
+        "bbox": [
+          539,
+          0,
+          261,
+          360
+        ]
+      },
+      {
+        "id": 5,
+        "caption": "a book shelf with dvds on it",
+        "bbox": [
+          299,
+          77,
+          268,
+          371
+        ]
+      },
+      {
+        "id": 6,
+        "caption": "a pink liquid in a glass bottle with a straw",
+        "bbox": [
+          764,
+          0,
+          306,
+          704
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          647,
+          452
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a pink water bottle with a straw in it",
+        "bbox": [
+          144,
+          0,
+          927,
+          678
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a close up of a pink flower in a vase",
+        "bbox": [
+          0,
+          514,
+          1069,
+          929
+        ]
+      }
+    ]
+  },
+  "9_foreground_bounding_box_black_out": {
+    "caption": "a pink drink in a glass with a straw",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          345
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a dog is sitting on a bed",
+        "bbox": [
+          148,
+          438,
+          231,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a person sitting on a chair in a room",
+        "bbox": [
+          0,
+          255,
+          144,
+          449
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a wine glass with a red liquid inside",
+        "bbox": [
+          539,
+          0,
+          261,
+          360
+        ]
+      },
+      {
+        "id": 5,
+        "caption": "a book shelf with dvds on it",
+        "bbox": [
+          299,
+          77,
+          268,
+          371
+        ]
+      },
+      {
+        "id": 6,
+        "caption": "a pink liquid in a glass with a straw",
+        "bbox": [
+          764,
+          0,
+          306,
+          704
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          647,
+          452
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a pink water bottle with a straw in it",
+        "bbox": [
+          144,
+          0,
+          927,
+          678
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a black background with a white clock on it",
+        "bbox": [
+          0,
+          514,
+          1069,
+          929
+        ]
+      }
+    ]
+  },
+  "9_foreground_exact_blur": {
+    "caption": "a pink drink with a straw sitting on a table",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          345
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a stuffed animal in a box",
+        "bbox": [
+          148,
+          438,
+          231,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a man is sitting on a chair with a laptop",
+        "bbox": [
+          0,
+          255,
+          144,
+          449
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a wine glass with a red liquid inside",
+        "bbox": [
+          539,
+          0,
+          261,
+          360
+        ]
+      },
+      {
+        "id": 5,
+        "caption": "a book shelf with dvds on it",
+        "bbox": [
+          299,
+          77,
+          268,
+          371
+        ]
+      },
+      {
+        "id": 6,
+        "caption": "a pink liquid with a straw in it",
+        "bbox": [
+          764,
+          0,
+          306,
+          704
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          647,
+          452
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a pink water bottle with a straw sitting on a table",
+        "bbox": [
+          144,
+          0,
+          927,
+          678
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a pink drink sitting on a table next to a pink toy",
+        "bbox": [
+          0,
+          514,
+          1069,
+          929
+        ]
+      }
+    ]
+  },
+  "9_foreground_exact_black_out": {
+    "caption": "a pink drink in a glass",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          345
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a stuffed animal in a box",
+        "bbox": [
+          148,
+          438,
+          231,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a man is sitting on a chair with a laptop",
+        "bbox": [
+          0,
+          255,
+          144,
+          449
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a wine glass with a red liquid inside",
+        "bbox": [
+          539,
+          0,
+          261,
+          360
+        ]
+      },
+      {
+        "id": 5,
+        "caption": "a book shelf with dvds on it",
+        "bbox": [
+          299,
+          77,
+          268,
+          371
+        ]
+      },
+      {
+        "id": 6,
+        "caption": "a pink drink with a straw in it",
+        "bbox": [
+          764,
+          0,
+          306,
+          704
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          647,
+          452
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a pink water bottle with a straw sitting on a table",
+        "bbox": [
+          144,
+          0,
+          927,
+          678
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a pink drink with a straw and a pink straw",
+        "bbox": [
+          0,
+          514,
+          1069,
+          929
+        ]
+      }
+    ]
+  },
+  "9_foreground_exact_erase": {
+    "caption": "a pink drink in a glass",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a basketball is being played on a court",
+        "bbox": [
+          0,
+          0,
+          77,
+          344
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a pile of stuffed animals",
+        "bbox": [
+          148,
+          438,
+          232,
+          120
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a red stuffed animal laying on the floor",
+        "bbox": [
+          300,
+          543,
+          228,
+          123
+        ]
+      },
+      {
+        "id": 4,
+        "caption": "a close up of a cat",
+        "bbox": [
+          537,
+          0,
+          127,
+          363
+        ]
+      },
+      {
+        "id": 5,
+        "caption": "a man is sitting on a chair with a laptop",
+        "bbox": [
+          0,
+          255,
+          144,
+          458
+        ]
+      },
+      {
+        "id": 6,
+        "caption": "a book shelf with dvds on it",
+        "bbox": [
+          298,
+          77,
+          268,
+          367
+        ]
+      },
+      {
+        "id": 7,
+        "caption": "a pink water bottle with a straw in it",
+        "bbox": [
+          657,
+          0,
+          413,
+          560
+        ]
+      },
+      {
+        "id": 8,
+        "caption": "a book shelf with many books and dvds on it",
+        "bbox": [
+          12,
+          0,
+          648,
+          453
+        ]
+      },
+      {
+        "id": 9,
+        "caption": "a mouse is sitting on a desk",
+        "bbox": [
+          4,
+          520,
+          1065,
+          923
+        ]
+      }
+    ]
+  },
+  "9_background_bounding_box_black_out": {
+    "caption": "a glass with a straw in it",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a pink liquid in a glass with a straw",
+        "bbox": [
+          763,
+          0,
+          306,
+          703
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a black area",
+        "bbox": [
+          4,
+          0,
+          759,
+          1283
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a pink drink with a straw in it",
+        "bbox": [
+          5,
+          431,
+          1063,
+          1012
+        ]
+      }
+    ]
+  },
+  "9_background_bounding_box_blur": {
+    "caption": "a pink cup with a straw in it",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a pink cup with a straw in it",
+        "bbox": [
+          335,
+          0,
+          734,
+          1443
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a blurry image of a laptop with a white background",
+        "bbox": [
+          4,
+          0,
+          750,
+          1443
+        ]
+      }
+    ]
+  },
+  "9_background_exact_black_out": {
+    "caption": "a pink drink in a glass with a straw",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a pink drink with a straw in it",
+        "bbox": [
+          764,
+          0,
+          305,
+          703
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a bottle of pink wine with a red label",
+        "bbox": [
+          5,
+          0,
+          798,
+          1064
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a pink liquid in a glass",
+        "bbox": [
+          6,
+          464,
+          1059,
+          979
+        ]
+      }
+    ]
+  },
+  "9_background_exact_blur": {
+    "caption": "a pink cup with a straw",
+    "OCR": [],
+    "dim": [
+      1072,
+      1444
+    ],
+    "unique_bboxes": [
+      {
+        "id": 1,
+        "caption": "a pink water bottle with a straw in it",
+        "bbox": [
+          3,
+          0,
+          1060,
+          650
+        ]
+      },
+      {
+        "id": 2,
+        "caption": "a blurry image of a white table with a white cloth",
+        "bbox": [
+          7,
+          0,
+          678,
+          1443
+        ]
+      },
+      {
+        "id": 3,
+        "caption": "a pink drink with a straw in it",
+        "bbox": [
+          323,
+          0,
+          745,
+          1443
+        ]
+      }
+    ]
+  }
+}
