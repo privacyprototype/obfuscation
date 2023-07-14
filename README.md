@@ -1,6 +1,6 @@
 Using Next.js(https://nextjs.org/learn).
 
-Instruction:
+Instruction: 
 
 1. Install all dependencies listed inside package.json by running:
 npm install
