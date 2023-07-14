@@ -109,7 +109,7 @@ export default function PhotoExplorer() {
         let boxDiv = (
           <Image
           className='box'
-          src="/images/transparent.png"
+          src="./images/transparent.png"
           width={box.bbox[2]* newDim / originalWidth}
           height={box.bbox[3]* newDim / originalHeight}
           style={{
